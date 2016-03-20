@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import br.ifrn.ssaac.business.model.Event;
 import br.ifrn.ssaac.business.model.Student;
 import br.ifrn.ssaac.persistence.util.ConnectionFactory;
 
@@ -38,6 +39,11 @@ public class UserDAOImp implements UserDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public Event getEvent(String id){
+		//todo
+		return null;
 	}
 
 }
